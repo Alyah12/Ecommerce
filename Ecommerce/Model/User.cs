@@ -14,5 +14,7 @@ public class User
 
     [MinLength(8), MaxLength(20)]
     public string? Password { get; set; }
+
+    [StringLength(20)]
     public string? Role { get; set; }
 }

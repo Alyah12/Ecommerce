@@ -1,6 +1,6 @@
 ﻿namespace Ecommerce.DTO;
 
-public class UserDto
+public record UserDto
 {
     public string? Name { get; set; }
     public string? Email { get; set; }

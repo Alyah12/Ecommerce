@@ -145,3 +145,10 @@ C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\obj\Debug\net8.0\ref\Ecommerce.
 C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.staticwebassets.endpoints.json
 C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\obj\Debug\net8.0\staticwebassets\msbuild.Ecommerce.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\obj\Debug\net8.0\Ecommerce.sourcelink.json
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\DnsClient.dll
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\Snappier.dll
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\ZstdSharp.dll

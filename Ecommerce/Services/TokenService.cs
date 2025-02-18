@@ -5,7 +5,7 @@ namespace Ecommerce.Services;
 
 public class TokenService : ITokenService
 {
-   public readonly IConfiguration _configuration;
+    public readonly IConfiguration _configuration;
 
     public string GenerateToken(User user)
     {

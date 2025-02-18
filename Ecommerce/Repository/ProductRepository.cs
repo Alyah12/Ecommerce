@@ -14,15 +14,9 @@ public class ProductRepository : IProductRepository
         _context = context;
     }
 
-    public void AddProduct(Product product)
-    {
-        using (var transaction = _context)
-            transaction.Product.AddAsync(product);
-    }
+    public void AddProduct (Product product) =>
+        _context.Product.AddAsync(product);
 
-    public Product? GetProductById(int id)
-    {
-        using (var transaction = _context)
-            return transaction.Product.FirstOrDefaultAsync(p => p.Id.Equals(id)).Result;
-    }
+    public Product? GetProductById(int id) =>
+        _context.Product.FirstOrDefaultAsync(p => p.Id.Equals(id)).Result;
 }

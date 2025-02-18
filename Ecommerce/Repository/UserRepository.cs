@@ -3,6 +3,7 @@ using Ecommerce.DTO;
 using Ecommerce.Model;
 using Ecommerce.Repository.Interfaces;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Repository;
 
@@ -17,37 +18,10 @@ public class UserRepository : IUserRepository
 
     public void AddUser(User user)
     {
-        try
-        {
-            using (var transaction = _context)
-            {
-                transaction.User.AddAsync(user);
-                transaction.SaveChangesAsync();
-            }
-        }
-        catch (SqlException e)
-        {
-            Console.WriteLine("O programa apresentou o seguinte erro: " + e);
-            Console.WriteLine(e.SqlState);
-        }
+        _context.User.AddAsync(user);
+        _context.SaveChangesAsync();
     }
 
-    public User? GetUserByEmail(string email)
-    {
-        try
-        {
-            using (var transaction = _context)
-            {
-                var user = transaction.User.FirstOrDefault(u => u.Email == email);
-                return user;
-            }
-        }
-        catch (SqlException e)
-        {
-            Console.WriteLine("O programa apresentou o seguinte erro: " + e);
-            Console.WriteLine(e.SqlState);
-        }
-
-        return null;
-    }
+    public Task <User?> GetUserByEmail(string email) =>
+    _context.User.FirstOrDefaultAsync(u => u.Email == email);
 }

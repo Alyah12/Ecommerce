@@ -54,7 +54,7 @@ Para usar <nome_do_projeto>, siga estas etapas:
 
 Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
 
-## 📫 Contribuindo para <nome_do_projeto>
+## 📫 Contribuindo para Ecommerce
 
 Para contribuir com <nome_do_projeto>, siga estas etapas:
 

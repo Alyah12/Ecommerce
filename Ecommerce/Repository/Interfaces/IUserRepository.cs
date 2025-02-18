@@ -5,5 +5,5 @@ namespace Ecommerce.Repository.Interfaces;
 public interface IUserRepository
 {
     public void AddUser(User user);
-    public User? GetUserByEmail(string email);
+    public Task<User?> GetUserByEmail(string email);
 }

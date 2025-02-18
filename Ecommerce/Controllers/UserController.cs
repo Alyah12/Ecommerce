@@ -1,8 +1,7 @@
-﻿using Ecommerce.Context;
-using Ecommerce.Model;
+﻿using Ecommerce.Model;
 using Ecommerce.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace Ecommerce.Controllers;
 
@@ -18,7 +17,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult Login(string email, string password)
+    public IActionResult Login(string? email, string? password)
     {
         User user = _userService.GetUserByEmail(email);
         if (user == null)

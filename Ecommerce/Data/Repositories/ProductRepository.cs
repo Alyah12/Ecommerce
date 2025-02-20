@@ -14,6 +14,6 @@ public class ProductRepository : IProductRepository
     public void AddProduct (Product product) =>
         _context.Product.AddAsync(product);
 
-    public Product? GetProductById(Product name) =>
+    public Product? GetProductByName(Product name) =>
         _context.Product.FirstOrDefaultAsync(p => p.Id.Equals(name)).Result;
 }

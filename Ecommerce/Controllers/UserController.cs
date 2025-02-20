@@ -17,6 +17,7 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult Login(string? email, string? password)
     {
         User user = _userService.GetUserByEmail(email);
@@ -31,8 +32,8 @@ public class UserController : ControllerBase
         return Ok();
     }
 
-
     [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
     public IActionResult Register(User user)
     {
         _userService.AddUser(user);

@@ -152,3 +152,4 @@ C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\MongoDB.Driver
 C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\SharpCompress.dll
 C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\Snappier.dll
 C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\heber\RiderProjects\Ecommerce\Ecommerce\bin\Debug\net8.0\FluentValidation.dll

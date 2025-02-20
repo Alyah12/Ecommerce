@@ -1,9 +1,6 @@
 ﻿using Ecommerce.Context;
 using Ecommerce.Model;
-using Ecommerce.Repository.Interfaces;
 using Ecommerce.Services.Interfaces;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Services;
@@ -17,6 +14,6 @@ public class ProductService : IProductService
         _context.Product.AddAsync(product);
 
 
-    public Product? GetProductById(Product name) =>
+    public Product? GetProductByName(Product name) =>
         _context.Product.FirstOrDefaultAsync(p => p.Id.Equals(name)).Result;
 }

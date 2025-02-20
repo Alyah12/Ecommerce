@@ -9,7 +9,7 @@ namespace Ecommerce.Repository;
 
 public class UserRepository : IUserRepository
 {
-    readonly AppDbContext _context;
+   public readonly AppDbContext _context;
 
     public UserRepository(AppDbContext context)
     {

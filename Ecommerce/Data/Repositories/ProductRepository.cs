@@ -7,12 +7,9 @@ namespace Ecommerce.Repository;
 
 public class ProductRepository : IProductRepository
 {
-    readonly AppDbContext _context;
+   public readonly AppDbContext _context;
 
-    public ProductRepository(AppDbContext context)
-    {
-        _context = context;
-    }
+    public ProductRepository(AppDbContext context) => _context = context;
 
     public void AddProduct (Product product) =>
         _context.Product.AddAsync(product);

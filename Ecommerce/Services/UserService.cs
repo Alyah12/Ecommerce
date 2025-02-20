@@ -8,17 +8,14 @@ public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
 
-    public UserService(IUserRepository userRepository)
-    {
+    public UserService(IUserRepository userRepository) =>
         _userRepository = userRepository;
-    }
-    public void AddUser(User user)
-    {
-        _userRepository.AddUser(user);
-    }
 
-    public User? GetUserByEmail(string email)
-    {
-        return _userRepository.GetUserByEmail(email).Result;
-    }
+    public void AddUser(User user) =>
+        _userRepository.AddUser(user);
+
+
+    public User? GetUserByEmail(string email) =>
+        _userRepository.GetUserByEmail(email).Result;
+
 }
